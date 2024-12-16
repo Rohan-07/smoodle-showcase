@@ -1,0 +1,21 @@
+{
+  "name": "showcase-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 5173",
+    "build": "next build",
+    "start": "next start -p 5173"
+  },
+  "dependencies": {
+    "next": "13.4.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "aos": "^2.3.4"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.14",
+    "@types/aos": "^3.0.4",
+    "typescript": "5.1.6"
+  }
+}

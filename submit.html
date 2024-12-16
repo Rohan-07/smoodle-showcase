@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Project - Smoodle Showcase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">Smoodle Showcase</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="submit.html" class="active">Submit Project</a>
+    </div>
+    <div class="nav-glow"></div>
+  </nav>
+
+  <main class="submit-container">
+    <h2>Submit Your Project</h2>
+    <form id="projectForm" class="project-form">
+      <div class="form-group">
+        <label for="projectName">Project Name</label>
+        <input type="text" id="projectName" name="projectName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="creatorName">Creator Name</label>
+        <input type="text" id="creatorName" name="creatorName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="projectUrl">Project URL</label>
+        <input type="url" id="projectUrl" name="projectUrl" required>
+      </div>
+
+      <div class="form-group">
+        <label for="screenshot">Screenshot</label>
+        <input type="file" id="screenshot" name="screenshot" accept="image/*" required>
+        <div id="imagePreview" class="image-preview"></div>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit Project</button>
+    </form>
+  </main>
+
+  <script src="submit.js"></script>
+</body>
+</html>
