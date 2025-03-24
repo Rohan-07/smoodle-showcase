@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 
 import ProjectCard from "./components/ProjectCard";
 import { Project } from "../types";
+import { symTextFont } from "./styles/fonts";
 
 export default function Home() {
 	const [projects, setProjects] = useState<Project[]>([]);
@@ -35,8 +36,12 @@ export default function Home() {
 		<>
 			<header>
 				<div className="header-content" data-aos="fade-up">
-					<span className="overline">Welcome to Smoodle</span>
-					<h1>AI-Powered Innovation Hub ✨</h1>
+					<span className={`overline ${symTextFont.className}`}>
+						Welcome to XO
+					</span>
+					<h1 className={`${symTextFont.className}`}>
+						AI-Powered Innovation Hub ✨
+					</h1>
 					<p className="tagline">
 						Where Human Creativity Meets AI Intelligence
 					</p>
@@ -55,7 +60,7 @@ export default function Home() {
 			<main>
 				<div className="section-header" data-aos="fade-up">
 					<h2>Featured Projects</h2>
-					<p>Discover what others have built with Smoodle</p>
+					<p>Discover what others have built with XO</p>
 				</div>
 				<div className="projects-grid">
 					{projects.map((project) => (
@@ -65,7 +70,7 @@ export default function Home() {
 			</main>
 
 			<footer>
-				<p>Powered by Smoodle AI</p>
+				<p>Powered by XO</p>
 			</footer>
 		</>
 	);

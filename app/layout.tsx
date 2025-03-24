@@ -1,15 +1,10 @@
 import "./globals.css";
-import { Montserrat } from "next/font/google";
 import Nav from "./components/Nav";
 import "aos/dist/aos.css";
-
-const montserrat = Montserrat({
-	subsets: ["latin"],
-	weight: ["400", "500", "600", "700", "800"],
-});
+import { firaCode } from "./styles/fonts";
 
 export const metadata = {
-	title: "Smoodle Showcase",
+	title: "XO Showcase",
 	description: "AI-Powered Innovation Hub",
 };
 
@@ -20,7 +15,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={montserrat.className}>
+			<body className={`${firaCode.className}`}>
 				<Nav />
 				{children}
 			</body>
